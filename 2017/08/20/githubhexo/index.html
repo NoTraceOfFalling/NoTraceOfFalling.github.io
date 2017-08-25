@@ -363,7 +363,15 @@
 <p>方法2.curl安装方式，此安装方式需重启<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</div></pre></td></tr></table></figure></p>
 <p>安装完成后，执行下列命令即可安装 Node.js。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nvm install 4</div></pre></td></tr></table></figure></p>
 <h2 id="HEXO"><a href="#HEXO" class="headerlink" title="HEXO"></a>HEXO</h2><p>装完Git和Node.js 我们接下来要去安装HEXO<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
-<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>软件准备完成后，我们现在要准备我们的博客所需要的空间。GitHub所提供的GitHub pages能让我们的静态网页有发布空间。<br>首先我们需要一个GitHub账号，没有的去注册一个。</p>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>软件准备完成后，我们现在要准备我们的博客所需要的空间。GitHub所提供的GitHub pages能让我们的静态网页有发布空间。<br>首先我们需要一个GitHub账号，没有的去注册一个。大家注册名称尽量<em>不要使用</em>大写字母。这一点的原因我将会在后面说明。<br>第二步 右上角选择 Create a new repository 创建一个库。名为yourname.github.io 最后创建库的结果应该为yourname/yourname.github.io。此处yourname.github.io将成为你之后的博客域名。<br><em>特别注意</em><br>这里两个yourname的名称要完全一样，包括大小写都应完全一样。因为url是不区分大小写的，为了避免强迫症发作。yourname中最好不要出现大写字母或url中不常用的字符。  </p>
+<h1 id="设置部署"><a href="#设置部署" class="headerlink" title="设置部署"></a>设置部署</h1><h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>在一个盘符下建立一个存放日志的文件夹，命名随意（避免中文）。<br>在文件夹下点击右键选择 Git Bash Here 在弹出的窗口中输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure></p>
+<p>等待。。。出现如下提示后继续操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Start blogging with Hexo!</div></pre></td></tr></table></figure></p>
+<p>初始化Hexo 目标文件夹中的source下应存在一篇题为hello world的文章。接下来我们要在本地服务器上预览这篇文章。<br>在目标文件夹处执行以下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
+<p>当得到下面的返回值时，在浏览器输入<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>。预览网站<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure></p>
+<p><em>如果失败</em>多半是你电脑的4000端口被占用了，不过一般没有哪个神奇的软件使用这个端口吧。（Hexo：有人在叫我？）。通过cmd去检查下端口使用的情况。通过下面的命令给Hexo换个端口。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server -p 端口号</div></pre></td></tr></table></figure></p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>我相信大家应该已经在本地看见自己的博客界面了吧，之后我们要把它发布到GitHub上去。</p>
+<h3 id="创建shh-key"><a href="#创建shh-key" class="headerlink" title="创建shh key"></a>创建shh key</h3><p>为了让github能够识别是我们自己上传文件，需要创建ssh key<br>在git中执行如下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;</div></pre></td></tr></table></figure></p>
+<p>其中your_email@youremail.com为你的邮箱地址。<br>在命令输入后会询问你是否保存创建的ssh key，点回车就好，然后要求输入你要设置的密码，如果直接回车表示不设密码。然后会提示你ssh key已经创建好。<br>之后执行下面的命令复制出公钥</p>
 
       
     </div>
@@ -381,7 +389,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/部署-HEXO-GitHub/" rel="tag"># 部署,HEXO,GitHub</a>
+            <a href="/tags/部署/" rel="tag"># 部署</a>
+          
+            <a href="/tags/HEXO/" rel="tag"># HEXO</a>
+          
+            <a href="/tags/GitHub/" rel="tag"># GitHub</a>
           
         </div>
       
@@ -503,7 +515,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -538,7 +550,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#材料准备"><span class="nav-number">1.</span> <span class="nav-text">材料准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git"><span class="nav-number">1.1.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HEXO"><span class="nav-number">1.3.</span> <span class="nav-text">HEXO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub"><span class="nav-number">1.4.</span> <span class="nav-text">GitHub</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#材料准备"><span class="nav-number">1.</span> <span class="nav-text">材料准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git"><span class="nav-number">1.1.</span> <span class="nav-text">Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Node-js"><span class="nav-number">1.2.</span> <span class="nav-text">Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HEXO"><span class="nav-number">1.3.</span> <span class="nav-text">HEXO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub"><span class="nav-number">1.4.</span> <span class="nav-text">GitHub</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置部署"><span class="nav-number">2.</span> <span class="nav-text">设置部署</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置"><span class="nav-number">2.1.</span> <span class="nav-text">设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署"><span class="nav-number">2.2.</span> <span class="nav-text">部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建shh-key"><span class="nav-number">2.2.1.</span> <span class="nav-text">创建shh key</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
