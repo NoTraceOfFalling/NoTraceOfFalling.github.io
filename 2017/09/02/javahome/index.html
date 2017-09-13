@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="部署,Java,Tomcat," />
 
 
 
@@ -94,17 +94,18 @@
 
 
 
-<meta name="description" content="Java,HTML,教程,技术,李嘉星">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://blog.notraceoffalling.com/tags/index.html">
+<meta name="description" content="鉴于阿里云的服务器太卡（学生党没钱配置低下），我把服务器从Windows Srever 2012 R2 降到了 Windows Srever 2012 32位。所以java环境、tomcat什么的都需要重新配置。想想顺便写篇日志作为留念吧。 材料准备JDKJDK是 Java 语言的软件开发工具包，主要用于移动设备、嵌入式设备上的java应用程序。JDK是整个java开发的核心，它包含了JAVA的运">
+<meta name="keywords" content="部署,Java,Tomcat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java及Tomcat环境配置">
+<meta property="og:url" content="http://blog.notraceoffalling.com/2017/09/02/javahome/index.html">
 <meta property="og:site_name" content="叶落无痕">
-<meta property="og:description" content="Java,HTML,教程,技术,李嘉星">
+<meta property="og:description" content="鉴于阿里云的服务器太卡（学生党没钱配置低下），我把服务器从Windows Srever 2012 R2 降到了 Windows Srever 2012 32位。所以java环境、tomcat什么的都需要重新配置。想想顺便写篇日志作为留念吧。 材料准备JDKJDK是 Java 语言的软件开发工具包，主要用于移动设备、嵌入式设备上的java应用程序。JDK是整个java开发的核心，它包含了JAVA的运">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-24T06:52:12.555Z">
+<meta property="og:updated_time" content="2017-09-02T02:32:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="Java,HTML,教程,技术,李嘉星">
+<meta name="twitter:title" content="Java及Tomcat环境配置">
+<meta name="twitter:description" content="鉴于阿里云的服务器太卡（学生党没钱配置低下），我把服务器从Windows Srever 2012 R2 降到了 Windows Srever 2012 32位。所以java环境、tomcat什么的都需要重新配置。想想顺便写篇日志作为留念吧。 材料准备JDKJDK是 Java 语言的软件开发工具包，主要用于移动设备、嵌入式设备上的java应用程序。JDK是整个java开发的核心，它包含了JAVA的运">
 
 
 
@@ -134,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.notraceoffalling.com/tags/"/>
+  <link rel="canonical" href="http://blog.notraceoffalling.com/2017/09/02/javahome/"/>
 
 
 
 
 
-  <title>标签 | 叶落无痕</title>
+  <title>Java及Tomcat环境配置 | 叶落无痕</title>
   
 
 
@@ -255,40 +256,216 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.notraceoffalling.com/2017/09/02/javahome/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiaXing Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oval90s6w.bkt.clouddn.com/o532761.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶落无痕">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 7 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/GitHub/" style="font-size: 12px; color: #ccc">GitHub</a> <a href="/tags/HEXO/" style="font-size: 12px; color: #ccc">HEXO</a> <a href="/tags/Java/" style="font-size: 12px; color: #ccc">Java</a> <a href="/tags/Tomcat/" style="font-size: 12px; color: #ccc">Tomcat</a> <a href="/tags/心情/" style="font-size: 12px; color: #ccc">心情</a> <a href="/tags/攻略/" style="font-size: 12px; color: #ccc">攻略</a> <a href="/tags/部署/" style="font-size: 30px; color: #111">部署</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Java及Tomcat环境配置</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-02T10:32:17+08:00">
+                2017-09-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/方法/" itemprop="url" rel="index">
+                    <span itemprop="name">方法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/09/02/javahome/" class="leancloud_visitors" data-flag-title="Java及Tomcat环境配置">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>鉴于阿里云的服务器太卡（学生党没钱配置低下），我把服务器从Windows Srever 2012 R2 降到了 Windows Srever 2012 32位。所以java环境、tomcat什么的都需要重新配置。想想顺便写篇日志作为留念吧。</p>
+<h1 id="材料准备"><a href="#材料准备" class="headerlink" title="材料准备"></a>材料准备</h1><h2 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h2><p>JDK是 Java 语言的软件开发工具包，主要用于移动设备、嵌入式设备上的java应用程序。JDK是整个java开发的核心，它包含了JAVA的运行环境（JVM+Java系统类库）和JAVA工具<br><a href="http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="external">JDK下载地址</a><br>在网站中选择合适你自己的jdk版本一般情况下来说应该选择和你本地开发环境相同的版本，如果你的服务器和我一样是windows的要看好是x86还是x64的。<br>因为我的服务器硬盘没分区，接下来就是无脑安装。next-&gt;next-&gt;····<br>安装好后去安装路径下找应该有jdk和jre两个文件夹，要记住jdk文件夹的路径。</p>
+<h2 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h2><p>Tomcat是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目，由Apache、Sun 和其他一些公司及个人共同开发而成。由于有了Sun 的参与和支持，最新的Servlet 和JSP 规范总是能在Tomcat 中得到体现，Tomcat 5支持最新的Servlet 2.4 和JSP 2.0 规范。因为Tomcat 技术先进、性能稳定，而且免费，因而深受Java 爱好者的喜爱并得到了部分软件开发商的认可，成为目前比较流行的Web 应用服务器<br><a href="http://tomcat.apache.org/download-70.cgi" target="_blank" rel="external">Tomcat下载地址</a><br>Tomcat的安装包有压缩包和可执行文件两种。压缩包的直接解压zip文件即可，可执行文件的双击运行，无脑安装即可。<strong>安装路径建议大家修改为：c:\tomcat。</strong><br>我将Tomcat设为自动启动就没有配置Tomcat的环境变量。  </p>
+<h1 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h1><h2 id="JDK-1"><a href="#JDK-1" class="headerlink" title="JDK"></a>JDK</h2><p>新建变量名：JAVA_HOME 变量值：JDK文件夹的路径<br>打开PATH，添加变量值：;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin<br>新建变量名：CLASSPATH 变量值： .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</p>
+<h2 id="Tomcat-1"><a href="#Tomcat-1" class="headerlink" title="Tomcat"></a>Tomcat</h2><p><strong>我将Tomcat设为自动启动就没有配置Tomcat的环境变量。</strong><br>右键点击桌面上的“我的电脑”-&gt;“管理”-&gt;“服务和应用程序”-&gt;“服务”，找到“Apache Tomcat”服务，右键点击该服务，选择“属性”，将“启动类型”由“手动”改成“自动”</p>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><h2 id="Tomcat-2"><a href="#Tomcat-2" class="headerlink" title="Tomcat"></a>Tomcat</h2><p>打开浏览器，在地址栏中输入<a href="http://*你的服务器地址*:8080回车，如果看到Tomcat自带的一个JSP页面，说明你的Tomcat已搭建成功。" target="_blank" rel="external">http://*你的服务器地址*:8080回车，如果看到Tomcat自带的一个JSP页面，说明你的Tomcat已搭建成功。</a></p>
+<h2 id="JDK-2"><a href="#JDK-2" class="headerlink" title="JDK"></a>JDK</h2><p>打开CMD，输入 Java、Javac、Java -version等命令如不报错，说明JDK环境以配置成功。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>生活不易，求打赏，求投食</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://oval90s6w.bkt.clouddn.com/weixin.png" alt="JiaXing Li WeChat Pay"/>
+        <p>微信打赏</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://oval90s6w.bkt.clouddn.com/zjifubao.png" alt="JiaXing Li Alipay"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/部署/" rel="tag"># 部署</a>
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/Tomcat/" rel="tag"># Tomcat</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/31/chengche/" rel="next" title="乘车预告（张家口南站搬迁后乘车建议）">
+                <i class="fa fa-chevron-left"></i> 乘车预告（张家口南站搬迁后乘车建议）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -323,8 +500,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://oval90s6w.bkt.clouddn.com/o532761.jpg"
@@ -388,6 +574,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#材料准备"><span class="nav-number">1.</span> <span class="nav-text">材料准备</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK"><span class="nav-number">1.1.</span> <span class="nav-text">JDK</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tomcat"><span class="nav-number">1.2.</span> <span class="nav-text">Tomcat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境变量"><span class="nav-number">2.</span> <span class="nav-text">环境变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK-1"><span class="nav-number">2.1.</span> <span class="nav-text">JDK</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tomcat-1"><span class="nav-number">2.2.</span> <span class="nav-text">Tomcat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试"><span class="nav-number">3.</span> <span class="nav-text">测试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Tomcat-2"><span class="nav-number">3.1.</span> <span class="nav-text">Tomcat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK-2"><span class="nav-number">3.2.</span> <span class="nav-text">JDK</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -524,10 +726,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
