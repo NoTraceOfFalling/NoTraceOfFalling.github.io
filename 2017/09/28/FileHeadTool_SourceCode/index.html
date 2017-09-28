@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="JAVA," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="FileHeadTool 代码、版本号 V1.0测试类123456789public class Test &amp;#123;public static void main(String[] args)  &amp;#123;FileHeadTool et = new FileHeadTool();String fileDir = &amp;quot;‪C:\\Users\\lijiaxing\\Desktop\\？.">
+<meta name="keywords" content="JAVA">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FileHeadTool 代码">
+<meta property="og:url" content="http://blog.notraceoffalling.com/2017/09/28/FileHeadTool_SourceCode/index.html">
+<meta property="og:site_name" content="叶落无痕">
+<meta property="og:description" content="FileHeadTool 代码、版本号 V1.0测试类123456789public class Test &amp;#123;public static void main(String[] args)  &amp;#123;FileHeadTool et = new FileHeadTool();String fileDir = &amp;quot;‪C:\\Users\\lijiaxing\\Desktop\\？.">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-27T16:00:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FileHeadTool 代码">
+<meta name="twitter:description" content="FileHeadTool 代码、版本号 V1.0测试类123456789public class Test &amp;#123;public static void main(String[] args)  &amp;#123;FileHeadTool et = new FileHeadTool();String fileDir = &amp;quot;‪C:\\Users\\lijiaxing\\Desktop\\？.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.notraceoffalling.com/2017/09/28/FileHeadTool_SourceCode/"/>
+
+
+
+
+
+  <title>FileHeadTool 代码 | 叶落无痕</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">叶落无痕</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">NoTraceOfFaling的技术博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.notraceoffalling.com/2017/09/28/FileHeadTool_SourceCode/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiaXing Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oval90s6w.bkt.clouddn.com/o532761.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="叶落无痕">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">FileHeadTool 代码</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-28T00:00:00+08:00">
+                2017-09-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/09/28/FileHeadTool_SourceCode/" class="leancloud_visitors" data-flag-title="FileHeadTool 代码">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="FileHeadTool-代码、"><a href="#FileHeadTool-代码、" class="headerlink" title="FileHeadTool 代码、"></a>FileHeadTool 代码、</h1><h2 id="版本号-V1-0"><a href="#版本号-V1-0" class="headerlink" title="版本号 V1.0"></a>版本号 V1.0</h2><h2 id="测试类"><a href="#测试类" class="headerlink" title="测试类"></a>测试类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">public class Test &#123;</div><div class="line">public static void main(String[] args)  </div><div class="line">&#123;</div><div class="line">FileHeadTool et = new FileHeadTool();</div><div class="line">String fileDir = &quot;‪C:\\Users\\lijiaxing\\Desktop\\？.docx&quot;;</div><div class="line">System.out.println(et.fileFormat(fileDir));</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">import java.io.File;</div><div class="line">import java.io.FileInputStream;</div><div class="line">import java.io.FileNotFoundException;</div><div class="line">import java.io.IOException;</div><div class="line">import java.io.UnsupportedEncodingException;</div><div class="line">import java.util.HashMap;</div><div class="line"></div><div class="line">public class FileHeadTool </div><div class="line">&#123;</div><div class="line">	static private HashMap&lt;String, String&gt; fileheader = new HashMap&lt;String, String&gt;();</div><div class="line">	static &#123;</div><div class="line">			fileheader.put(&quot;FFD8FF&quot;,&quot;jpg&quot;);                             //JPEG                </div><div class="line">			fileheader.put(&quot;89504E47&quot;,&quot;png&quot;);                           //PNG                 </div><div class="line">			fileheader.put(&quot;47494638&quot;,&quot;gif&quot;);                           //GIF               </div><div class="line">			fileheader.put(&quot;504B0304&quot;,&quot;zip&quot;);                           //ZIP Archive </div><div class="line">			fileheader.put(&quot;49492A00&quot;,&quot;tif&quot;);                           //TIFF         </div><div class="line">			fileheader.put(&quot;424D&quot;,&quot;bmp&quot;);                               //Windows Bitmap</div><div class="line">			fileheader.put(&quot;41433130&quot;,&quot;dwg&quot;);                           //CAD           </div><div class="line">			fileheader.put(&quot;38425053&quot;,&quot;psd&quot;);                           //Adobe Photoshop   </div><div class="line">			fileheader.put(&quot;7B5C727466&quot;,&quot;rtf&quot;);                         //Rich Text Format   </div><div class="line">			fileheader.put(&quot;3C3F786D6C&quot;,&quot;xml&quot;);                         //XML                 </div><div class="line">			fileheader.put(&quot;68746D6C3E&quot;,&quot;html&quot;);                        //HTML                </div><div class="line">			fileheader.put(&quot;44656C69766572792D646174653A&quot;,&quot;eml&quot;);       //Email [thorough only] </div><div class="line">			fileheader.put(&quot;CFAD12FEC5FD746F&quot;,&quot;dbx&quot;);                   //Outlook Express      </div><div class="line">			fileheader.put(&quot;2142444E&quot;,&quot;pst&quot;);                           //Outlook             </div><div class="line">			fileheader.put(&quot;D0CF11E0&quot;,&quot;03MSOFFIC&quot;);                     //MS 03 </div><div class="line">			fileheader.put(&quot;504B0304&quot;,&quot;07MSOFFIC&quot;);                     //MS 07</div><div class="line">			fileheader.put(&quot;5374616E64617264204A&quot;,&quot;mdb&quot;);               //MS Access          </div><div class="line">			fileheader.put(&quot;FF575043&quot;,&quot;wpd&quot;);                           //WordPerfect        </div><div class="line">			fileheader.put(&quot;255044462D312E&quot;,&quot;pdf&quot;);                     //Adobe Acrobat     </div><div class="line">			fileheader.put(&quot;AC9EBD8F&quot;,&quot;qdf&quot;);                           //Quicken            </div><div class="line">			fileheader.put(&quot;E3828596&quot;,&quot;pwl&quot;);                           //Windows Password     </div><div class="line">			fileheader.put(&quot;52617221&quot;,&quot;rar&quot;);                           //RAR Archive </div><div class="line">			fileheader.put(&quot;57415645&quot;,&quot;wav&quot;);                           //Wave                 </div><div class="line">			fileheader.put(&quot;41564920&quot;,&quot;avi&quot;);                           //AVI                 </div><div class="line">			fileheader.put(&quot;2E7261FD&quot;,&quot;ram&quot;);                           //Real Audio          </div><div class="line">			fileheader.put(&quot;2E524D46&quot;,&quot;rm&quot;);                            //Real Media           </div><div class="line">			fileheader.put(&quot;000001BA&quot;,&quot;mpg&quot;);                           //MPEG                </div><div class="line">			fileheader.put(&quot;000001B3&quot;,&quot;mpg&quot;);                           //MPEG               </div><div class="line">			fileheader.put(&quot;6D6F6F76&quot;,&quot;mov&quot;);                           //Quicktime            </div><div class="line">			fileheader.put(&quot;3026B2758E66CF11&quot;,&quot;asf&quot;);                   //Windows Media        </div><div class="line">			fileheader.put(&quot;4D546864&quot;,&quot;mid&quot;);                           //MIDI   </div><div class="line">		&#125;</div><div class="line">	public HashMap&lt;String, String&gt; getFileheader() &#123;</div><div class="line">		return fileheader;</div><div class="line">	&#125;</div><div class="line">	/** </div><div class="line">     * 添加文件头字典 </div><div class="line">     * @param String String  16进制文件头  文件后缀 </div><div class="line">     * @return </div><div class="line">     */ </div><div class="line">	public void setFileheader(String fileheads,String filesuffix) &#123;</div><div class="line">		this.fileheader.put(fileheads, filesuffix);</div><div class="line">	&#125;</div><div class="line">	/** </div><div class="line">     * 判断文件是否存在. </div><div class="line">     * @param fileDir  文件路径 </div><div class="line">     * @return boolean</div><div class="line">     */  </div><div class="line">    public boolean fileExist(String fileDir)</div><div class="line">    &#123;  </div><div class="line">         boolean flag = false;  </div><div class="line">         File file = new File(fileDir);  </div><div class="line">         flag = file.getAbsoluteFile().exists();  </div><div class="line">         return flag;  </div><div class="line">    &#125; </div><div class="line">    /**</div><div class="line">     * 判断文件格式(利用文件头)</div><div class="line">     * @param fileDir  文件路径 (GBK)</div><div class="line">     * @return String 文件格式</div><div class="line">     *  文件后缀</div><div class="line">     *  字典中不存在则显示“未知类型”</div><div class="line">     *  文件头字典可getFileheader()查看，setFileheader()添加</div><div class="line">     */</div><div class="line">    public String fileFormat(String fileDir)</div><div class="line">    &#123;</div><div class="line">    	String fileformat = &quot;&quot;;</div><div class="line">    	try &#123;</div><div class="line">    		byte[] b = fileDir.getBytes(&quot;GBK&quot;);</div><div class="line">			fileDir = new String( fileDir.getBytes(&quot;GBK&quot;),&quot;GBK&quot;);</div><div class="line">			fileDir=fileDir.replace(&quot;?&quot; , &quot;&quot;);//去除字符串开头的？ 解决utf-8转GBK时字符串头出现的乱码？</div><div class="line">		&#125; catch (UnsupportedEncodingException e1) &#123;</div><div class="line">			// TODO Auto-generated catch block</div><div class="line">			e1.printStackTrace();</div><div class="line">		&#125;</div><div class="line">    	FileInputStream fis = null;</div><div class="line">    	File file = new File(fileDir); </div><div class="line">    	byte[] b = new byte[10];  //存放文件头</div><div class="line">    	if(fileExist(fileDir))</div><div class="line">    	&#123;</div><div class="line">			try &#123;</div><div class="line">				fis = new FileInputStream(file);</div><div class="line">				int bytes = fis.read(b, 0, b.length);	</div><div class="line">				if(bytes == 0)&#123;</div><div class="line">	                System.out.println(&quot;读取文件头信息异常&quot;);</div><div class="line">	            &#125;else &#123;</div><div class="line">	            	fileformat = bytesToHexString(b).toUpperCase();</div><div class="line">	            	fileformat = Fileheader(fileformat);</div><div class="line">	            	if(&quot;03MSOFFIC&quot;.equals(fileformat)||&quot;07MSOFFIC&quot;.equals(fileformat))</div><div class="line">	            	&#123;</div><div class="line">	            		fileformat = Filetail(file);</div><div class="line">	            	&#125;</div><div class="line">	            &#125;</div><div class="line">			&#125; catch (IOException e) &#123;</div><div class="line">				// TODO Auto-generated catch block</div><div class="line">				e.printStackTrace();</div><div class="line">				e.printStackTrace();</div><div class="line">			&#125;</div><div class="line">			finally &#123;</div><div class="line">				try &#123;</div><div class="line">					fis.close();</div><div class="line">				&#125; catch (IOException e) &#123;</div><div class="line">					// TODO Auto-generated catch block</div><div class="line">					e.printStackTrace();</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">    	&#125;</div><div class="line">    	else</div><div class="line">    	&#123;</div><div class="line">    		System.out.println(&quot;打开文件异常&quot;);</div><div class="line">    	&#125;</div><div class="line">    	return fileformat;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    /**</div><div class="line">     * byte数组转换成16进制字符串</div><div class="line">     * </div><div class="line">     * @param src byte数组</div><div class="line">     * @return String </div><div class="line">     */</div><div class="line">    private String bytesToHexString(byte[] src) &#123;</div><div class="line">        StringBuilder stringBuilder = new StringBuilder();</div><div class="line">        if (src == null || src.length &lt;= 0) &#123;</div><div class="line">            return null;</div><div class="line">        &#125;</div><div class="line">        for (int i = 0; i &lt; src.length; i++) &#123;</div><div class="line">            int v = src[i] &amp; 0xFF;</div><div class="line">            String hv = Integer.toHexString(v);</div><div class="line">            if (hv.length() &lt; 2) &#123;</div><div class="line">                stringBuilder.append(0);</div><div class="line">            &#125;</div><div class="line">            stringBuilder.append(hv);</div><div class="line">        &#125;</div><div class="line">        return stringBuilder.toString();</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    /**</div><div class="line">     *  获取文件后缀</div><div class="line">     *  @param File 文件流</div><div class="line">     *  @return String 文件后缀</div><div class="line">     *  </div><div class="line">     */</div><div class="line">    private String Filetail(File file)</div><div class="line">    &#123; </div><div class="line">        String fileName = file.getName();  </div><div class="line">        String suffix = fileName.substring(fileName.lastIndexOf(&quot;.&quot;) + 1);  </div><div class="line">    	return suffix;</div><div class="line">	&#125;</div><div class="line">    </div><div class="line">    /**</div><div class="line">     *  根据文件头判断文件类型</div><div class="line">     *  @param String 20位16进制文件头</div><div class="line">     *  @return String 文件后缀(MS office 为版本号+MSOFFICE 例：03MSOFFICE) </div><div class="line">     *  字典中不存在则显示“未知类型”</div><div class="line">     *  文件头字典可getFileheader()查看，setFileheader()添加</div><div class="line">     */</div><div class="line">    private String Fileheader(String src)</div><div class="line">    &#123;</div><div class="line">    	String filesuffix = &quot;未知类型&quot;;</div><div class="line">    	for (String key : fileheader.keySet()) &#123;</div><div class="line">    		if(src.startsWith(key))</div><div class="line">    		&#123;</div><div class="line">    			filesuffix =  fileheader.get(key);</div><div class="line">    		&#125; </div><div class="line">    	&#125;</div><div class="line">    	return filesuffix;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>生活不易，求打赏，求投食</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://oval90s6w.bkt.clouddn.com/weixin.png" alt="JiaXing Li WeChat Pay"/>
+        <p>微信打赏</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://oval90s6w.bkt.clouddn.com/zjifubao.png" alt="JiaXing Li Alipay"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JAVA/" rel="tag"># JAVA</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/27/FileHeadTool_API/" rel="next" title="类 FileHeadTool API">
+                <i class="fa fa-chevron-left"></i> 类 FileHeadTool API
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://oval90s6w.bkt.clouddn.com/o532761.jpg"
+               alt="JiaXing Li" />
+          <p class="site-author-name" itemprop="name">JiaXing Li</p>
+           
+              <p class="site-description motion-element" itemprop="description">Java,HTML,教程,技术,李嘉星</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives">
+            
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#FileHeadTool-代码、"><span class="nav-number">1.</span> <span class="nav-text">FileHeadTool 代码、</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#版本号-V1-0"><span class="nav-number">1.1.</span> <span class="nav-text">版本号 V1.0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试类"><span class="nav-number">1.2.</span> <span class="nav-text">测试类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源代码"><span class="nav-number">1.3.</span> <span class="nav-text">源代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JiaXing Li</span>
+
+  
+</div>
+
+
+  <div class="powered-by"><a href="http://www.miitbeian.gov.cn/">冀ICP备17008935号</a> </div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user">本站访客数</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye">本站总访问量</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+    
+
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2142498"></script>
+      <!-- UY END -->
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("7pktYtGj1f8LsYJ6yLGHlgQy-gzGzoHsz", "wXyu2PqbUQUlIJfoMdTd5LeC");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
