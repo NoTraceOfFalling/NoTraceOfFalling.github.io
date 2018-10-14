@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    <link href="/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="插件,Notepad++," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Notepad++是我喜欢的富文本存储器，但他本身对HTML不具有代码整理的功能。因此去安装Tidy2来整理HTML代码。在此我将提供下载地址和相关配置项的说明 下载地址Tidy2 配置项说明12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565">
+<meta name="keywords" content="插件,Notepad++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notepad++ Tidy2 下载及配置项说明">
+<meta property="og:url" content="https://blog.fallworld.top/20180627.html">
+<meta property="og:site_name" content="堕落世界">
+<meta property="og:description" content="Notepad++是我喜欢的富文本存储器，但他本身对HTML不具有代码整理的功能。因此去安装Tidy2来整理HTML代码。在此我将提供下载地址和相关配置项的说明 下载地址Tidy2 配置项说明12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-26T16:00:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Notepad++ Tidy2 下载及配置项说明">
+<meta name="twitter:description" content="Notepad++是我喜欢的富文本存储器，但他本身对HTML不具有代码整理的功能。因此去安装Tidy2来整理HTML代码。在此我将提供下载地址和相关配置项的说明 下载地址Tidy2 配置项说明12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://blog.fallworld.top/20180627.html"/>
+
+
+
+
+
+  <title>Notepad++ Tidy2 下载及配置项说明 | 堕落世界</title>
+  
+
+
+
+
+
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+  
+  
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">堕落世界</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">FallWorld的技术博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.fallworld.top/20180627.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JiaXing Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://img.fallworld.top/img/fallworld/o532761.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="堕落世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Notepad++ Tidy2 下载及配置项说明</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-27T00:00:00+08:00">
+                2018-06-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/插件/" itemprop="url" rel="index">
+                    <span itemprop="name">插件</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/20180627.html#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="20180627.html" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/20180627.html" class="leancloud_visitors" data-flag-title="Notepad++ Tidy2 下载及配置项说明">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Notepad++是我喜欢的富文本存储器，但他本身对HTML不具有代码整理的功能。因此去安装Tidy2来整理HTML代码。<br>在此我将提供下载地址和相关配置项的说明</p>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="http://img.fallworld.top/img/fallworld/Tidy2.dll" target="_blank" rel="external">Tidy2</a></p>
+<h2 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">break-before-br</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否输出时在每一个&lt;BR&gt; 元素前,加一个空行.</div><div class="line">indent        </div><div class="line">    默认取值: no</div><div class="line">    可选参数：auto/yes/no</div><div class="line">    此选项规定是否缩进块级标签. 若置为 &quot;auto&quot;, 则此选项会根据标签,如:TITLE, H1-H6, LI, TD, TD, 或 P是否包括块级元素内容, 决定是否缩进标签内容. 建议避免使用yes, 因为会使一些浏览器出现层(layout)bugs.</div><div class="line">indent-attributes</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否每个属性占一行.</div><div class="line">indent-spaces</div><div class="line">    默认取值: 2</div><div class="line">    可选参数: 0, 1, 2, ...</div><div class="line">    此选项规定缩进选型开启时,缩进的空格数.</div><div class="line">markup</div><div class="line">    默认取值: yes</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否生成美化版本的标记.注意:如果有严重错误时不生成美化版.  (见 force-output).</div><div class="line">punctuation-wrap</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否在一些Unicode 或 中文发音字符后绕行.</div><div class="line">sort-attributes</div><div class="line">    默认取值: none</div><div class="line">    可选参数: none, alpha</div><div class="line">    此选项规定是否按一些特定的排序算法对元素中的属性进行排序. 如果置为 &quot;alpha&quot;, 则按字母序排序.</div><div class="line">split</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    当前未用,仅在Tidy Classic中使用.</div><div class="line">tab-size</div><div class="line">    默认取值: 8</div><div class="line">    可选参数: 0, 1, 2, ...    此选项规定连续tab符号所占的列数.用于从tab到空格的映射.Tidy不输出tab.</div><div class="line">vertical-space</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否为可读性加入一些空行.</div><div class="line">wrap</div><div class="line">    默认取值: 68</div><div class="line">    可选参数: 0 (no wrapping), 1, 2,  ...</div><div class="line">    此选项规定绕行的右边距. Tidy在不超过此长度内换行. 置为0,意味着关闭绕行功能.</div><div class="line">wrap-asp</div><div class="line">    默认取值: yes</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否在对ASP伪元素内的文本内容换行, 形如: &lt;% ... %&gt;.</div><div class="line">wrap-attributes</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否为方便编辑而对属性值绕行. 该选项可独立于wrap-script-literals选项设置.</div><div class="line">wrap-jste</div><div class="line">    默认取值: yes</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否对JSTE伪元素内的文本内容进行绕行, 形如: &lt;# ... #&gt;.</div><div class="line">    </div><div class="line">wrap-php</div><div class="line">    默认取值: yes</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否对php伪元素内的文本内容进行绕行, 形如: &lt;?php ...  ?&gt;</div><div class="line">wrap-script-literals</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否对出现在脚本属性(script attributes)中的字符串字面量进行绕行. Tidy通过在换行前插入反斜杠对长字符串字面量进行绕行.</div><div class="line">wrap-sections</div><div class="line">    默认取值: yes</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否对&lt;![ ... ]&gt; 段标签内的文本内容进行绕行.</div><div class="line">output-xml</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否输出为美化的格式良好XML.任何没有在XML 1.0中定义过的实体都会被转化为数字实体,以使其能被XML解析器解析. 无论其他选项,原始的标签大小写和属性将不变.</div><div class="line">input-xml</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是用XML解析器还是用纠错HTML解析器.</div><div class="line">    </div><div class="line">    </div><div class="line">numeric-entities    </div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定数字是否应该输出除内建HTML实体(&amp;amp;, &amp;lt;, &amp;gt; and &amp; quot;)以外的实体,而不是命名实体形式只有和DOCTYPE声明约定相兼容的实体备用. 在输出编码中可以被表现的实体被对应转化.</div><div class="line">quote-marks         </div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否将字符 &quot; 输出为 &amp;quot; 因为这是一些编辑环境首选的. 撇号 ’ 输出为 &amp;#39; 因为一些浏览器不支持 &amp;apos;.</div><div class="line">    </div><div class="line">quote-nbsp</div><div class="line">    默认取值: yes</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否将non-breaking空格字符转为实体, 而不是Unicode 160  (decimal).    </div><div class="line">quote-ampersand</div><div class="line">    默认取值: yes</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否转化&amp;为&amp;amp;.    </div><div class="line"></div><div class="line">    </div><div class="line">uppercase-tags</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否用大写输出标签名. 默认为 no, 使标签名转为小写, 除XML,将保留原始的大小写.</div><div class="line">uppercase-attributes</div><div class="line">    默认取值: no</div><div class="line">    可选参数：yes/no</div><div class="line">    此选项规定是否用大写输出属性名. 默认为 no, 使属性名转为小写, 除XML,将保留原始的大小写.</div><div class="line">new-inline-tags</div><div class="line">    取值类型: Tag names</div><div class="line">    默认取值: -</div><div class="line">    可选参数: tagX, tagY, ...</div><div class="line">    此选项规定新的非空inline标签.此选项用空格或逗号分隔标签列表. 除非你声明了新表签,如果输入文件包含先前未知的标签,Tidy将不会生成处理文件. 这个选项在XML模式中被忽略.</div><div class="line">new-blocklevel-tags</div><div class="line">    取值类型: Tag names</div><div class="line">    默认取值: -</div><div class="line">    可选参数:tagX, tagY, ...</div><div class="line">    此选项规定新的块级标签. 此选项用空格或逗号分隔标签列表.除非你声明了新表签, 如果输入文件包含先前未知的标签,Tidy将不会生成处理文件. 你不能改变元素内容的模式,比如: &lt;TABLE&gt;, &lt;UL&gt;, &lt;OL&gt; and &lt;DL&gt;. 这个选项在XML模式中被忽略.</div><div class="line">new-empty-tags</div><div class="line">    取值类型: Tag names</div><div class="line">    默认取值: -</div><div class="line">    可选参数:tagX, tagY, ...</div><div class="line">    该选项指定新的空inline标签.该选项规定新的空inline标签. 此选项用空格或逗号分隔标签列表.除非你声明了新表签, 如果输入文件包含先前未知的标签,Tidy将不会生成处理文件.记住,声明的空标签也作为inline或blocklevel标签. 这个选项在XML模式中被忽略.</div></pre></td></tr></table></figure>
+<h2 id="我常用的配置项"><a href="#我常用的配置项" class="headerlink" title="我常用的配置项"></a>我常用的配置项</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">indent: auto</div><div class="line">indent-spaces: 4</div><div class="line">wrap: 132</div><div class="line">markup: yes</div><div class="line">output-xml: yes</div><div class="line">input-xml: no</div><div class="line">numeric-entities: no</div><div class="line">quote-marks: yes</div><div class="line">quote-nbsp: yes</div><div class="line">quote-ampersand: no</div><div class="line">break-before-br: no</div><div class="line">uppercase-tags: no</div><div class="line">uppercase-attributes: no</div><div class="line">new-inline-tags: cfif, cfelse, math, mroot, </div><div class="line">  mrow, mi, mn, mo, msqrt, mfrac, msubsup, munderover,</div><div class="line">  munder, mover, mmultiscripts, msup, msub, mtext,</div><div class="line">  mprescripts, mtable, mtr, mtd, mth</div><div class="line">new-blocklevel-tags: cfoutput, cfquery</div><div class="line">new-empty-tags: cfelse</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>生活不易，求打赏，求投食</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://img.fallworld.top/img/fallworld/weixin.png" alt="JiaXing Li WeChat Pay"/>
+        <p>微信打赏</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://img.fallworld.top/img/fallworld/zjifubao.png" alt="JiaXing Li Alipay"/>
+        <p>支付宝打赏</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/插件/" rel="tag"># 插件</a>
+          
+            <a href="/tags/Notepad/" rel="tag"># Notepad++</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/20180515_1.html" rel="next" title="jQuery对象与dom对象">
+                <i class="fa fa-chevron-left"></i> jQuery对象与dom对象
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/20180628.html" rel="prev" title="关于数据库中的异常字符">
+                关于数据库中的异常字符 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://img.fallworld.top/img/fallworld/o532761.jpg"
+               alt="JiaXing Li" />
+          <p class="site-author-name" itemprop="name">JiaXing Li</p>
+           
+              <p class="site-description motion-element" itemprop="description">Java,HTML,教程,技术,李嘉星</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives">
+            
+                <span class="site-state-item-count">28</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载地址"><span class="nav-number">1.</span> <span class="nav-text">下载地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置项说明"><span class="nav-number">2.</span> <span class="nav-text">配置项说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我常用的配置项"><span class="nav-number">3.</span> <span class="nav-text">我常用的配置项</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JiaXing Li</span>
+
+  
+</div>
+
+
+  <div class="powered-by"><a href="http://www.miitbeian.gov.cn/">冀ICP备17008935号</a> </div><br>
+  <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+  
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user">您是来到这里的第</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      位小伙伴
+    </span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8521711085411994",
+    enable_page_level_ads: true
+  });
+</script>
+   <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cytB17nNr';
+      var conf = '8356f3f43b703df4048d85780d80ac7a';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("7pktYtGj1f8LsYJ6yLGHlgQy-gzGzoHsz", "wXyu2PqbUQUlIJfoMdTd5LeC");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
